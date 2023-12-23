@@ -1,0 +1,134 @@
+header {
+  text-align: center;
+  padding: 20px 0;
+  background: linear-gradient(to right, #ff9900, #ff5f6d);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+header:hover {
+  background: linear-gradient(to right, #ff5f6d, #ff9900);
+}
+header h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2em;
+  color: #fff;
+  animation: fadeInDown 1.5s ease-out;
+}
+nav {
+  text-align: center;
+  margin-bottom: 10px;
+}
+nav a {
+  color: #fff;
+  padding: 5px 5px;
+  margin: 0 10px;
+  border-radius: 3px;
+  background-color: #ff5f6d;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+nav a:hover {
+  transform: scale(1.1);
+  background-color: #ff9900;
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+section h2 {
+  color: #ff5f6d;
+  text-align: center;
+  transition: color 0.3s ease-in-out
+  font-size=3em;
+  ;
+}
+section h2:hover {
+  color: #ff9900;
+}
+section {
+  background-color: #c8e6c9; 
+  padding: 40px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+section:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background-color: #aed581; 
+}
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: linear-gradient(to right, #ff9900, #ff5f6d);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+footer:hover {
+  background: linear-gradient(to right, #ff5f6d, #ff9900);
+}
+footer a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+  transition: color 0.3s ease-in-out;
+}
+footer a:hover {
+  color: #fff;
+}
+footer p {
+  margin-top: 10px;
+  font-style: italic;
+  color: #fff;
+}
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 10px 0; 
+  }
+  header h1 {
+    font-size: 3em; 
+  }
+  nav {
+    margin-bottom: 10px; 
+  }
+  nav a {
+    padding: 8px 12px; 
+    margin: 0 6px; 
+    font-size: 0.8em; 
+  }
+}
+@media only screen and (max-width: 400px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  nav a {
+    margin: 4px; 
+    padding: 6px 10px; 
+  }
+}
+section h2 {
+  font-size: 2em; 
+}
+section {
+  padding: 20px; 
+  margin-bottom: 10px; 
+}
+footer {
+  padding: 10px 0; 
+}
+footer a {
+  margin: 0 6px; 
+}
+footer p {
+  margin-top: 5px; 
+}
